@@ -1,5 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import classes from "./NavBar.module.css";
+import spainsh from "./../img/es.png";
+import english from "./../img/en.jpg";
 
 const NavLinks = ({ isMobile, closeMobileMenu }) => {
   const animateFrom = { opacity: 0, y: -40 };
@@ -56,8 +59,22 @@ const NavLinks = ({ isMobile, closeMobileMenu }) => {
         transition={{ delay: 0.4 }}
         onClick={() => isMobile && closeMobileMenu()}
       >
-        <button onClick={() => i18n.changeLanguage("es")}>ES</button>
-        <button onClick={() => i18n.changeLanguage("en")}>EN</button>
+        <img
+          className={classes.es}
+          onClick={() => i18n.changeLanguage("es")}
+          src={spainsh}
+          alt="spainsh"
+          style={{ width: 40 }}
+        ></img>
+        <img
+          className={classes.en}
+          onClick={() => i18n.changeLanguage("en")}
+          src={english}
+          alt="english"
+          style={{ width: 50, marginLeft: 10 }}
+        ></img>
+        {/* <button onClick={() => i18n.changeLanguage("es")}>ES</button>
+        <button onClick={() => i18n.changeLanguage("en")}>EN</button> */}
       </motion.li>
     </ul>
   );
