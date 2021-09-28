@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Header, Footer } from "../layout";
-import "./Layout.css";
+import classes from "./Layout.module.css";
 
 function Layout({ children }) {
   return (
-    <div className="layout">
+    <div className={classes.Layout}>
       <Header />
       <hr />
       <main>{children}</main>

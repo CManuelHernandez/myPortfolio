@@ -1,0 +1,34 @@
+.MainPage {
+  background: rgb(10, 110, 106);
+  background: linear-gradient(
+    90deg,
+    rgba(10, 110, 106, 1) 0%,
+    rgba(9, 121, 117, 1) 31%,
+    rgba(1, 231, 212, 1) 88%
+  );
+  display: flex;
+  height: 630px;
+  padding-top: 80px;
+}
+
+.Home .Container h1 {
+  margin: 0;
+}
+
+.MainPage .BinaryWorld {
+  height: 70%;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+}
+
+.MainPage .Code {
+  height: 24%;
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+}
+
+.MainPage .Container .Hello {
+  font-size: calc(1.7rem + 3vw);
+}
