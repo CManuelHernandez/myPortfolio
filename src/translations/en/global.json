@@ -1,3 +1,28 @@
 {
-  "hello-world": "Hello World"
+  "hello-world": "Hello World",
+  "Developer": "Developer",
+  "Junior Front-end": "Junior Front-end",
+  "MERN Stack Developer": "MERN Stack Developer",
+  "mainPage": {
+    "hello-there!": "Hello there!",
+    "I'M": "I'M",
+    "LET-ME": "LET ME",
+    "INTRODUCE": "INTRODUCE",
+    "MYSELF": "MYSELF",
+    "FIND ME ON": "FIND ME ON",
+    "I changed my professional career 2017 and since then I fell in love with programming": "I changed my professional career 2017 and since then I fell in love with programming",
+    "My main language is": "My main language is",
+    "although my first ❝ Hello World ❞ was in Java": "although my first ❝Hello World❞ was in Java",
+    "My field of Interest's are building new": "My field of Interest's are building new",
+    "Web Pages and Apps": "Web Pages and Apps",
+    "and also in areas related to": "and also in areas related to",
+    "Back-end development using the MERN stack": "Back-end development using the MERN stack",
+    "Whenever possible, I also apply my passion for developing products with": "Whenever possible, I also apply my passion for developing products with",
+    "and": " and",
+    "Modern Javascript Library and Frameworks": "Modern Javascript Library and Frameworks",
+    "like": " like",
+    "Feel free to": "Feel free to",
+    "connect": "connect",
+    "with me": "with me"
+  }
 }

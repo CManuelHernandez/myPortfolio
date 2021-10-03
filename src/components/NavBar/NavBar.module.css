@@ -10,6 +10,35 @@
   align-items: center;
 }
 
+.NavBar h1 {
+  font-weight: 900;
+  font-size: calc(1rem + 3vw);
+  color: white;
+}
+
+.NavBar h2 {
+  font-weight: 700;
+  font-size: calc(1rem + 1.5vw);
+  color: white;
+}
+
+.NavBar p {
+  font-weight: 500;
+  font-size: calc(0.75rem + 1vw);
+}
+.NavBar a {
+  font-weight: 900;
+  font-size: calc(0.6rem + 1vw);
+  color: white;
+}
+.NavBar li {
+  font-size: calc(0.6rem + 1vw);
+}
+.NavBar code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 .NavBar nav ul {
   list-style: none;
   margin: 0;
@@ -27,11 +56,15 @@
 }
 
 .NavBar nav ul li a:hover {
-  border-bottom: 5px solid rgba(9, 121, 117, 1);
+  border-bottom: 5px solid var(--imp-text-color);
 }
 
 .NavBar .MobileNavigation {
   display: none;
+}
+
+.NavBar img {
+  cursor: pointer;
 }
 
 @media (max-width: 990px) {
@@ -55,7 +88,7 @@
     right: 0;
     width: 100%;
     background-color: #181818;
-    border-top: 2px solid rgba(9, 121, 117, 1);
+    border-top: 2px solid var(--imp-text-color);
   }
 
   .NavBar nav ul li {
@@ -68,6 +101,6 @@
 
   .NavBar a:hover {
     border-bottom: none;
-    color: rgba(9, 121, 117, 1);
+    color: var(--imp-text-color);
   }
 }

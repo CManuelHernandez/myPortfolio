@@ -1,34 +1,212 @@
-.MainPage {
-  background: rgb(10, 110, 106);
-  background: linear-gradient(
-    90deg,
-    rgba(10, 110, 106, 1) 0%,
-    rgba(9, 121, 117, 1) 31%,
-    rgba(1, 231, 212, 1) 88%
-  );
-  display: flex;
-  height: 630px;
+.homeHeader {
   padding-top: 80px;
 }
 
-.MainPage .Container h1 {
-  margin: 0;
+.homeSection {
+  position: relative;
+  z-index: -1;
+  background-image: var(--image-gradient), url(../../Assets/home-bg-nebu.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
-.MainPage .BinaryWorld {
-  height: 70%;
+.homeContent {
+  padding: 9rem 0 2rem;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.heading {
+  font-size: 2.4em;
+  padding-left: 50px;
+}
+
+.headingName {
+  font-size: 2.5em;
+  padding-left: 45px;
+}
+
+.mainName {
+  color: #40a4ac;
+}
+
+.Typewriter__wrapper {
+  font-size: 2.2em;
+  color: #2a8f96;
+  font-weight: 600;
+}
+.Typewriter__cursor {
+  font-size: 2.4em;
+  color: #2a8f96;
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+.headingName {
+  font-size: 2.5em;
+  padding-left: 45px;
+}
+
+.mainName {
+  color: #4aebf7;
+}
+
+.myAvtar {
+  justify-content: center;
+  padding-top: 9em;
+}
+
+.homeAboutSection {
+  position: relative;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+.homeBottomAboutSection {
+  background: rgb(2, 3, 4);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 3, 4, 1) 0%,
+    rgba(3, 41, 50, 1) 55%,
+    rgba(9, 121, 117, 1) 100%
+  );
+  position: relative;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
+.homeAboutDescription {
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.homeAboutBody {
+  padding-top: 50px;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.profileCircle {
+  width: 217px;
+  height: 237px;
+}
+
+.homeAboutSocial {
+  text-align: center;
+  padding-top: 25px;
+  color: white;
+}
+
+.homeAboutSocialLinks {
+  justify-content: center;
+  padding-top: 15px;
+  display: inline-block;
+  position: relative;
+  padding-inline-start: 0;
+}
+
+.socialIcons {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.homeSocialIcons {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 2em;
+  background: rgba(255, 255, 255, 0.972);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.homeSocialIcons::before {
+  content: "";
   position: absolute;
-  right: 10%;
-  top: 20%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #21b2bd;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
 }
 
-.MainPage .Code {
-  height: 24%;
-  position: absolute;
-  bottom: 0;
-  left: 2%;
+.homeSocialIcons:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #44bbc4;
 }
 
-.MainPage .Container .Hello {
-  font-size: calc(1.7rem + 3vw);
+.homeSocialIcons:hover {
+  color: #29bfca;
+  box-shadow: 0 0 5px #29bfca;
+  text-shadow: 0 0 2px #29bfca;
+}
+
+.socialIcons {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.iconColour {
+  color: #25b4be;
+}
+
+/* wave */
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .Typewriter__wrapper {
+    font-size: 1.4em;
+    font-weight: 500;
+    position: absolute;
+  }
+  .Typewriter__cursor {
+    display: none;
+  }
+  .myAvtar {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
 }
