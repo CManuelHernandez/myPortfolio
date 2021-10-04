@@ -11,7 +11,7 @@ import classes from "./MainPage.module.css";
 function MainPageBottom() {
   const { t } = useTranslation("global");
   return (
-    <Container fluid className={classes.homeBottomAboutSection} id="about">
+    <Container fluid className={classes.homeBottomAboutSection} id="homeAbout">
       <Particle />
       <Container>
         <Row>

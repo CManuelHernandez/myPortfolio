@@ -22,6 +22,7 @@ const NavLinks = ({ isMobile, closeMobileMenu }) => {
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.05 }}
+        to="/about"
         onClick={() => isMobile && closeMobileMenu()}
       >
         <a href="/">About Me</a>

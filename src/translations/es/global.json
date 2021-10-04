@@ -28,5 +28,21 @@
   "footer": {
     "Designed and Developed by": "Diseñado y desarrollado por",
     "Download My CV": "Descarga Mi CV"
+  },
+  "about": {
+    "Hi, I am": "Hola, soy",
+    "Jr.Full Stack": "",
+    "Jr.Full Stack ES": " Jr. Full Stack",
+    "Web Developer": "Desarrollador Web",
+    "Graduated in": "Titulado en",
+    "Web Application Development": "Desarrollo de Aplicaciones Web",
+    "from the Technological Institute of Telefonica, programming enthusiast and of new technologies. I consider myself a person cooperative, curious and eager to learn and improve.": "por el Instituto Tecnológico de Telefónica, entusiasta de la programación y de las nuevas tecnologías. Me considero una persona cooperativa, curiosa y con ganas de aprender y de mejorar.",
+    "from that my interest in training continuously. I am looking for a company that offers me the opportunity to continue evolving in the world of web development and I am committed to get involved and to do what it takes for the achievement of objectives.": "De ahí mi interés por formarme continuamente. Busco una empresa que me ofrezca la oportunidad de seguir evolucionando en el mundo del desarrollo web y me comprometo a involucrarme y a poner lo que haga falta para la consecución de objetivos.",
+    "due to the situation caused by the pandemic I have reinforce my knowledge in different technologies. Deepening and broadening my knowledge using the BOOTCAMP of KeepCoding® of": "Por la situación que ha supuesto la pandemia he aprovechado para reforzar mis conocimientos en distintas tecnologías. Profundizando y ampliando mi conocimiento mediante el BOOTCAMP de KeepCoding® de",
+    "with the MERN stack": "con el stack MERN",
+    "Education": "Estudios",
+    "My": "Mis",
+    "Experiences": "Experiencia",
+    "Others Experiences": "Otras Experiencias"
   }
 }
