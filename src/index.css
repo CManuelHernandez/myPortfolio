@@ -7,9 +7,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-nav {
-  margin-top: -7px;
-}
 
 html {
   --section-background-color: linear-gradient(
