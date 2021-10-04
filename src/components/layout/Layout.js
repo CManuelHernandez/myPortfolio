@@ -8,9 +8,7 @@ function Layout({ children }) {
   return (
     <div className={classes.Layout}>
       <Header />
-      <hr />
       <main>{children}</main>
-      <hr />
       <Footer />
     </div>
   );
