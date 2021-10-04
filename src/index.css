@@ -26,6 +26,10 @@ html {
   font-size: 14px;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .purple {
   color: var(--imp-text-color);
 }
