@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import AboutInfoItem from "./AboutInfoItem";
-import { CgSoftwareDownload } from "react-icons/cg";
+import { CgEnter, CgSoftwareDownload } from "react-icons/cg";
 import { useTranslation } from "react-i18next";
 import pdf from "../../Assets/CManuelHM-CV.pdf";
 import myImg from "../../Assets/yoBW.jpg";

@@ -74,6 +74,11 @@
   padding-top: 30px;
 }
 
+.aboutCV {
+  display: flex;
+  justify-content: center;
+}
+
 .aboutContent {
   padding: 9rem 0 2rem;
 }
@@ -124,6 +129,11 @@
   }
   .aboutInfoHeading {
     font-size: 3rem;
+  }
+
+  .imgAbout {
+    border-radius: 8px;
+    margin: 2rem 9rem 2rem 9rem;
   }
 }
 
