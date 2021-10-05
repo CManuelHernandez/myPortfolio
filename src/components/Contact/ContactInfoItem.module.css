@@ -1,0 +1,36 @@
+.contactInfoStyled {
+  padding: 2rem;
+  color: #29bfca;
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+.contactInfoStyled p {
+  padding: 1rem 1rem 0 1rem;
+}
+.contactInfoStyled:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #44bbc4;
+}
+
+.contactInfoStyled:hover {
+  color: #29bfca;
+  box-shadow: 0 0 5px #29bfca;
+  text-shadow: 0 0 2px #29bfca;
+}
+.icon {
+  color: white;
+  background-color: #29bfca;
+  padding: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.icon svg {
+  height: 2rem;
+  width: 2rem;
+}

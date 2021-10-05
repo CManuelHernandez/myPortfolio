@@ -39,7 +39,7 @@ const NavLinks = ({ isMobile, closeMobileMenu }) => {
         transition={{ delay: 0.1 }}
         onClick={() => isMobile && closeMobileMenu()}
       >
-        <Link to="/">{t("nav.Contact")}</Link>
+        <Link to="/contact">{t("nav.Contact")}</Link>
       </motion.li>
 
       {/* <motion.li

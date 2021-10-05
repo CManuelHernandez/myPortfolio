@@ -1,0 +1,69 @@
+/*Contact*/
+.allContact {
+  background: rgb(2, 3, 4);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 3, 4, 1) 23%,
+    rgba(3, 36, 44, 1) 63%,
+    rgba(9, 121, 117, 1) 100%
+  );
+  color: whitesmoke;
+  text-align: left;
+  padding-bottom: 3rem;
+}
+.contactSection {
+  position: relative;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.contactContent {
+  padding-top: 80px;
+}
+.contactSectionWrapper {
+  display: flex;
+  gap: 5rem;
+  margin-top: 7rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contactSectionWrapper::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 50%;
+  background-color: grey;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+.contactInfo {
+  width: 100%;
+  max-width: 500px;
+}
+.contactInfoTitle {
+  display: flex;
+  justify-content: space-around;
+}
+.contactForm {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  padding-bottom: 20;
+  /* padding-left: 3rem; */
+}
+@media only screen and (max-width: 768px) {
+  .contactSectionWrapper {
+    flex-direction: column;
+  }
+  .contactSectionWrapper::after {
+    display: none;
+  }
+  .contactInfo,
+  .contactForm {
+    max-width: 100%;
+  }
+  .contactForm {
+    padding: 4rem 2rem 2rem 2rem;
+  }
+}
