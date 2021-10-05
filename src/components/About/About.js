@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import AboutInfoItem from "./AboutInfoItem";
-import { CgEnter, CgSoftwareDownload } from "react-icons/cg";
+import Layout from "../layout/Layout";
+import { CgSoftwareDownload } from "react-icons/cg";
 import { useTranslation } from "react-i18next";
 import pdf from "../../Assets/CManuelHM-CV.pdf";
 import myImg from "../../Assets/yoBW.jpg";
@@ -10,7 +11,7 @@ import classes from "./About.module.css";
 function About() {
   const { t } = useTranslation("global");
   return (
-    <>
+    <Layout>
       <Container fluid className={classes.allAbout}>
         <Container fluid className={classes.aboutSection} id="about">
           <Container className={classes.aboutContent}>
@@ -115,7 +116,7 @@ function About() {
           </Col>
         </Container>
       </Container>
-    </>
+    </Layout>
   );
 }
 

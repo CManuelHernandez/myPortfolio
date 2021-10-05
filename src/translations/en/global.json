@@ -44,5 +44,10 @@
     "My": "My",
     "Experiences": "Experiences",
     "Others Experiences": "Others Experiences"
+  },
+  "nav": {
+    "Home": "Home",
+    "About Me": "About Me",
+    "Contact": "Contact"
   }
 }

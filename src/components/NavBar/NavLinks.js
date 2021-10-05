@@ -1,13 +1,14 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import classes from "./NavBar.module.css";
+import { Link } from "react-router-dom";
 import spainsh from "./../img/es.png";
 import english from "./../img/en.jpg";
+import classes from "./NavBar.module.css";
 
 const NavLinks = ({ isMobile, closeMobileMenu }) => {
   const animateFrom = { opacity: 0, y: -40 };
   const animateTo = { opacity: 1, y: 0 };
-  const { i18n } = useTranslation("global");
+  const { t, i18n } = useTranslation("global");
   return (
     <ul>
       <motion.li
@@ -15,17 +16,16 @@ const NavLinks = ({ isMobile, closeMobileMenu }) => {
         animate={animateTo}
         onClick={() => isMobile && closeMobileMenu()}
       >
-        <a href="/">Home</a>
+        <Link to="/">{t("nav.Home")}</Link>
       </motion.li>
 
       <motion.li
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.05 }}
-        to="/about"
         onClick={() => isMobile && closeMobileMenu()}
       >
-        <a href="/">About Me</a>
+        <Link to="/about">{t("nav.About Me")}</Link>
       </motion.li>
 
       <motion.li
@@ -34,30 +34,21 @@ const NavLinks = ({ isMobile, closeMobileMenu }) => {
         transition={{ delay: 0.1 }}
         onClick={() => isMobile && closeMobileMenu()}
       >
-        <a href="/">Skills</a>
+        <Link to="/">{t("nav.Contact")}</Link>
       </motion.li>
 
-      <motion.li
+      {/* <motion.li
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.2 }}
         onClick={() => isMobile && closeMobileMenu()}
       >
-        <a href="/">Git</a>
-      </motion.li>
-
+        <Link to="/">Git</Link>
+      </motion.li> */}
       <motion.li
         initial={animateFrom}
         animate={animateTo}
-        transition={{ delay: 0.3 }}
-        onClick={() => isMobile && closeMobileMenu()}
-      >
-        <a href="/">Contact</a>
-      </motion.li>
-      <motion.li
-        initial={animateFrom}
-        animate={animateTo}
-        transition={{ delay: 0.4 }}
+        transition={{ delay: 0.2 }}
         onClick={() => isMobile && closeMobileMenu()}
       >
         <img
