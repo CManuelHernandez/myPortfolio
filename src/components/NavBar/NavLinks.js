@@ -2,8 +2,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import spainsh from "./../img/es.png";
-import english from "./../img/en.jpg";
+import spainsh from "../../Assets/es.png";
+import english from "../../Assets/en.jpg";
 import classes from "./NavBar.module.css";
 
 const NavLinks = ({ isMobile, closeMobileMenu }) => {
