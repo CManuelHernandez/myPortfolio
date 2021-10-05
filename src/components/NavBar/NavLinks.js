@@ -1,3 +1,4 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -9,6 +10,10 @@ const NavLinks = ({ isMobile, closeMobileMenu }) => {
   const animateFrom = { opacity: 0, y: -40 };
   const animateTo = { opacity: 1, y: 0 };
   const { t, i18n } = useTranslation("global");
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <ul>
       <motion.li
