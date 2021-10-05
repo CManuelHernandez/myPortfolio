@@ -18,7 +18,7 @@ function MainPageBottom() {
           <Col md={8} className={classes.homeAboutDescription}>
             <h1 style={{ fontSize: "2.6em" }}>
               {t("mainPage.LET-ME")}{" "}
-              <span className="purple">{t("mainPage.INTRODUCE")} </span>{" "}
+              <span className="turquoise">{t("mainPage.INTRODUCE")} </span>{" "}
               {t("mainPage.MYSELF")}
             </h1>
             <p className={classes.homeAboutBody}>
@@ -29,16 +29,19 @@ function MainPageBottom() {
               <br />
               {t("mainPage.My main language is")}
               <i>
-                <b className="purple"> Javascript </b>{" "}
+                <b className="turquoise"> Javascript </b>{" "}
                 {t("mainPage.although my first ❝ Hello World ❞ was in Java")}
               </i>
               <br />
               <br />
               {t("mainPage.My field of Interest's are building new")}
               <i>
-                <b className="purple"> {t("mainPage.Web Pages and Apps")} </b>{" "}
+                <b className="turquoise">
+                  {" "}
+                  {t("mainPage.Web Pages and Apps")}{" "}
+                </b>{" "}
                 {t("mainPage.and also in areas related to")}{" "}
-                <b className="purple">
+                <b className="turquoise">
                   {t("mainPage.Back-end development using the MERN stack")}
                 </b>
               </i>
@@ -46,18 +49,18 @@ function MainPageBottom() {
               <br />
               {t(
                 "mainPage.Whenever possible, I also apply my passion for developing products with"
-              )}
-              <b className="purple">Node.js</b>
+              )}{" "}
+              <b className="turquoise">Node.js</b>
               {t("mainPage.and")}
               <i>
-                <b className="purple">
+                <b className="turquoise">
                   {" "}
                   {t("mainPage.Modern Javascript Library and Frameworks")}
                 </b>
               </i>
               &nbsp;{t("mainPage.like")}
               <i>
-                <b className="purple"> React.js{t("mainPage.and")} Redux</b>
+                <b className="turquoise"> React.js{t("mainPage.and")} Redux</b>
               </i>
             </p>
           </Col>
@@ -72,7 +75,7 @@ function MainPageBottom() {
             <h1>{t("mainPage.FIND ME ON")}</h1>
             <p>
               {t("mainPage.Feel free to")}{" "}
-              <span className="purple">{t("mainPage.connect")} </span>
+              <span className="turquoise">{t("mainPage.connect")} </span>
               {t("mainPage.with me")}
             </p>
             <ul className={classes.homeAboutSocialLinks}>

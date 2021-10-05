@@ -18,19 +18,19 @@ function About() {
               <Col md={7} className={classes.aboutHeader}>
                 <p className={classes.aboutSubHeading}>
                   {t("about.Hi, I am")}{" "}
-                  <span className="purple">
+                  <span className="turquoise">
                     Carlos Manuel Hernández Montero
                   </span>
                 </p>
                 <h2 className={classes.aboutHeading}>
                   {t("about.Jr.Full Stack")}{" "}
-                  <span className="purple">{t("about.Web Developer")}</span>
+                  <span className="turquoise">{t("about.Web Developer")}</span>
                   {t("about.Jr.Full Stack ES")}
                 </h2>
                 <div className={classes.aboutInfo}>
                   <p>
                     {t("about.Graduated in")}{" "}
-                    <span className="purple">
+                    <span className="turquoise">
                       {t("about.Web Application Development")}
                     </span>{" "}
                     {t(
@@ -46,7 +46,7 @@ function About() {
                     {t(
                       "about.due to the situation caused by the pandemic I have reinforce my knowledge in different technologies. Deepening and broadening my knowledge using the BOOTCAMP of KeepCoding® of"
                     )}{" "}
-                    <span className="purple">Full Stack Web Developer</span>{" "}
+                    <span className="turquoise">Full Stack Web Developer</span>{" "}
                     {t("about.with the MERN stack")}
                   </p>
                 </div>
