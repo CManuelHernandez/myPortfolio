@@ -25,6 +25,30 @@ html {
   scroll-behavior: smooth;
   font-size: 14px;
 }
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #70e7f0;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #29bfca;
+  border-radius: 12px;
+}
 
 a:hover {
   text-decoration: none;
