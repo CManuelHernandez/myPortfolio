@@ -43,7 +43,12 @@
 }
 .contactInfoTitle {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+.contactInfoTitle h1 {
+  display: flex;
+  justify-content: space-evenly;
 }
 .contactForm {
   max-width: 500px;

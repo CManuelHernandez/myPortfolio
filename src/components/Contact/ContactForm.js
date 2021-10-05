@@ -1,55 +1,114 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-
+import { useTranslation } from "react-i18next";
+import emailjs from "emailjs-com";
 import classes from "./ContactForm.module.css";
 
+require("dotenv").config();
+
 export default function ContactForm() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
+  const form = React.useRef();
+  const defaultFormValues = {
+    name: "",
+    email: "",
+    message: "",
+  };
+  const [credentials, setCredentials] = React.useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const sendEmail = () => {
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_MAIL_SERVICE_ID,
+        process.env.REACT_APP_MAIL_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_MAIL_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
+    sendEmail();
+    // Todo Better Feedback
+    setCredentials(defaultFormValues);
+    return alert(t("contact.Sended"));
+  };
+
+  const handleChange = (ev) => {
+    setCredentials((oldCredentials) => ({
+      ...oldCredentials,
+      [ev.target.name]: ev.target.value,
+    }));
+  };
+  const verifyForm = () => {
+    if (!credentials.name || !credentials.email || !credentials.message) {
+      return true;
+    }
+    return false;
+  };
+
+  const { t } = useTranslation("global");
   return (
     <>
-      <Container className={classes.contactFormStyled}>
+      <form
+        className={classes.contactFormStyled}
+        ref={form}
+        onSubmit={handleSubmit}
+      >
         <div className={classes.formGroup}>
           <label htmlFor="name">
-            Your Name
+            {t("contact.Your Name")}
             <input
               type="text"
               id="name"
               name="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={credentials.name}
+              onChange={handleChange}
             />
           </label>
         </div>
         <div className={classes.formGroup}>
           <label htmlFor="email">
-            Your Email
+            {t("contact.Your Email")}
             <input
               type="email"
               id="email"
               name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={credentials.email}
+              onChange={handleChange}
             />
           </label>
         </div>
         <div className={classes.formGroup}>
           <label htmlFor="message">
-            Your message
+            {t("contact.Your message")}
             <textarea
               type="text"
               id="message"
               name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              value={credentials.message}
+              onChange={handleChange}
             />
           </label>
         </div>
-        <button className={classes.buttonContactForm} type="submit">
-          Send
+        <button
+          className={classes.buttonContactForm}
+          disabled={verifyForm()}
+          type="submit"
+        >
+          {t("contact.Send")}
         </button>
-      </Container>
+      </form>
     </>
   );
 }

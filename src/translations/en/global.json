@@ -49,5 +49,15 @@
     "Home": "Home",
     "About Me": "About Me",
     "Contact": "Contact"
+  },
+  "contact": {
+    "Madrid, Rivas-Vaciamadrid - Spain": "Madrid, Rivas-Vaciamadrid - Spain",
+    "get in touch": "get in touch",
+    "Contact": "Contact",
+    "Your Name": "Your Name",
+    "Your Email": "Your Email",
+    "Your message": "Your Message",
+    "Send": "Send",
+    "Sended": "Sended"
   }
 }
