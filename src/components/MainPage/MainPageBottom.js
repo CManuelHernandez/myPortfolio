@@ -23,7 +23,7 @@ function MainPageBottom() {
             </h1>
             <p className={classes.homeAboutBody}>
               {t(
-                "mainPage.I changed my professional career 2017 and since then I fell in love with programming"
+                "mainPage.I changed my professional career in 2017 and since then I have been passionate about programming"
               )}
               <br />
               <br />
