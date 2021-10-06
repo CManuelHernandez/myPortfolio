@@ -11,13 +11,9 @@ function App() {
         <Route exact path="/">
           <MainPage />
         </Route>
-      </BrowserRouter>
-      <BrowserRouter basename={window.location.pathname || ""}>
         <Route exact path="/about">
           <About />
         </Route>
-      </BrowserRouter>
-      <BrowserRouter basename={window.location.pathname || ""}>
         <Route exact path="/contact">
           <Contact />
         </Route>
