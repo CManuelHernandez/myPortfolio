@@ -6,8 +6,8 @@ import { Contact } from "./components/Contact/Contact";
 
 function App() {
   return (
-    <Switch>
-      <BrowserRouter basename={window.location.pathname || ""}>
+    <BrowserRouter basename={window.location.pathname || ""}>
+      <Switch>
         <Route exact path="/">
           <MainPage />
         </Route>
@@ -17,8 +17,8 @@ function App() {
         <Route exact path="/contact">
           <Contact />
         </Route>
-      </BrowserRouter>
-    </Switch>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
