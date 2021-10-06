@@ -12,12 +12,16 @@ function App() {
           <MainPage />
         </Route>
       </BrowserRouter>
-      <Route exact path="/about">
-        <About />
-      </Route>
-      <Route exact path="/contact">
-        <Contact />
-      </Route>
+      <BrowserRouter basename={window.location.pathname || ""}>
+        <Route exact path="/about">
+          <About />
+        </Route>
+      </BrowserRouter>
+      <BrowserRouter basename={window.location.pathname || ""}>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
+      </BrowserRouter>
     </Switch>
   );
 }
