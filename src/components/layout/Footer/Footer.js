@@ -38,7 +38,7 @@ function Footer() {
           <ul className={classes.footerIcons}>
             <li className={classes.socialIcons}>
               <a
-                href="https://https://github.com/CManuelHernandez"
+                href="https://github.com/CManuelHernandez"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
