@@ -6,7 +6,7 @@ import { Contact } from "./components/Contact/Contact";
 
 function App() {
   return (
-    <BrowserRouter basename={window.location.pathname || ""}>
+    <BrowserRouter basename={"myPortfolio"}>
       <Switch>
         <Route exact path="/">
           <MainPage />
