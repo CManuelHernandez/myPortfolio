@@ -102,9 +102,12 @@ function About() {
             </h1>
             <AboutInfoItem
               title="10/2019-04/2020"
-              items={["BlazedPath Developer"]}
+              items={[t("about.BlazedPath Developer")]}
             />
-            <AboutInfoItem title="04/2019-07/2019" items={["Web Developer"]} />
+            <AboutInfoItem
+              title="04/2019-07/2019"
+              items={[t("about.Web Developer")]}
+            />
           </Col>
           <Col md={8} className={classes.AboutDescription}>
             <h1 className={classes.aboutInfoHeading}>
@@ -112,7 +115,7 @@ function About() {
             </h1>
             <AboutInfoItem
               title="09/2009-12/2018"
-              items={["Optical and acoustic health"]}
+              items={[t("about.Optical and Acoustic health")]}
             />
           </Col>
         </Container>
