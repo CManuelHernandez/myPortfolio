@@ -9,6 +9,7 @@
   margin-bottom: 2rem;
 }
 .contactInfoStyled p {
+  display: flex;
   padding: 1rem 1rem 0 1rem;
 }
 .contactInfoStyled:hover::before {
@@ -33,4 +34,10 @@
 .icon svg {
   height: 2rem;
   width: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .contactInfoStyled p {
+    word-break: break-word;
+  }
 }

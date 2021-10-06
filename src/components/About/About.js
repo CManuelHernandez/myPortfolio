@@ -87,6 +87,7 @@ function About() {
           <Col md={8} className={classes.AboutDescription}>
             <h1 className={classes.aboutInfoHeading}>{t("about.My")} Skills</h1>
             <AboutInfoItem
+              className="itemBig"
               title="FrontEnd"
               items={["HTML", "CSS", "JavaScript", "REACT"]}
             />
