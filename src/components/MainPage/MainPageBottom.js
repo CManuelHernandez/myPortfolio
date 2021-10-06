@@ -81,7 +81,7 @@ function MainPageBottom() {
             <ul className={classes.homeAboutSocialLinks}>
               <li className={classes.socialIcons}>
                 <a
-                  href="https://https://github.com/CManuelHernandez"
+                  href="https://github.com/CManuelHernandez"
                   target="_blank"
                   rel="noreferrer"
                   className={`${classes.iconColour} ${classes.homeSocialIcons}`}
