@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import MainPage from "./components/MainPage/MainPage";
 import About from "./components/About/About";
 import { Contact } from "./components/Contact/Contact";
@@ -7,9 +7,11 @@ import { Contact } from "./components/Contact/Contact";
 function App() {
   return (
     <Switch>
-      <Route exact path="/">
-        <MainPage />
-      </Route>
+      <BrowserRouter basename={window.location.pathname || ""}>
+        <Route exact path="/">
+          <MainPage />
+        </Route>
+      </BrowserRouter>
       <Route exact path="/about">
         <About />
       </Route>
