@@ -17,6 +17,15 @@ export default function ContactForm() {
     email: "",
     message: "",
   });
+  const [sendForm, setSendForm] = React.useState(false);
+
+  React.useEffect(() => {
+    if (sendForm) {
+      setTimeout(() => {
+        setSendForm(false);
+      }, 5000);
+    }
+  }, [sendForm]);
 
   const sendEmail = () => {
     emailjs
@@ -41,7 +50,7 @@ export default function ContactForm() {
     sendEmail();
     // Todo Better Feedback
     setCredentials(defaultFormValues);
-    return alert(t("contact.Sended"));
+    setSendForm(true);
   };
 
   const handleChange = (ev) => {
@@ -101,13 +110,23 @@ export default function ContactForm() {
             />
           </label>
         </div>
-        <button
-          className={classes.buttonContactForm}
-          disabled={verifyForm()}
-          type="submit"
-        >
-          {t("contact.Send")}
-        </button>
+        {!sendForm ? (
+          <button
+            className={classes.buttonContactForm}
+            disabled={verifyForm()}
+            type="submit"
+          >
+            {t("contact.Send")}
+          </button>
+        ) : (
+          <button
+            className={classes.buttonContactFormOK}
+            disabled={true}
+            type="submit"
+          >
+            {t("contact.Sent")}
+          </button>
+        )}
       </form>
     </>
   );

@@ -4,7 +4,6 @@ import { MdEmail, MdLocalPhone } from "react-icons/md";
 import { GrLinkedinOption } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
 import Layout from "../layout/Layout";
-import { Link } from "react-router-dom";
 import ContactInfoItem from "./ContactInfoItem";
 import { useTranslation } from "react-i18next";
 
