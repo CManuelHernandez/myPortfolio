@@ -35,12 +35,12 @@ function About() {
                       {t("about.Web Application Development")}
                     </span>{" "}
                     {t(
-                      "about.from the Technological Institute of Telefonica, programming enthusiast and of new technologies. I consider myself a person cooperative, curious and eager to learn and improve."
+                      "about.from the Technological Institute of Telefonica, passionated about programming and new technologies. I consider myself a cooperative and curious person and eager to learn and improve."
                     )}
                   </p>
                   <p>
                     {t(
-                      "about.from that my interest in training continuously. I am looking for a company that offers me the opportunity to continue evolving in the world of web development and I am committed to get involved and to do what it takes for the achievement of objectives."
+                      "about.That's where my interest in training continuously. I am looking for a company that offers me the opportunity to continue evolving in the world of web development and I am committed to get involved and to do what it takes for the achievement of objectives."
                     )}
                   </p>
                   <p>
