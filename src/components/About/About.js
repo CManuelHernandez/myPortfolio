@@ -5,7 +5,7 @@ import Layout from "../layout/Layout";
 import { CgSoftwareDownload } from "react-icons/cg";
 import { useTranslation } from "react-i18next";
 import pdf from "../../Assets/CManuelHM-CV.pdf";
-import myImg from "../../Assets/yoBW.jpg";
+import myImg from "../../Assets/man.png";
 import classes from "./About.module.css";
 
 function About() {
@@ -51,7 +51,7 @@ function About() {
                     {t("about.with the MERN stack")}
                   </p>
                 </div>
-                <Col md="4" className={classes.aboutCV}>
+                <Col md={4} className={classes.aboutCV}>
                   <a
                     href={pdf}
                     target="_blank"
@@ -65,7 +65,7 @@ function About() {
                   </a>
                 </Col>
               </Col>
-              <Col md={5} style={{ paddingBottom: 20 }}>
+              <Col className={classes.imgWrapper} md={5}>
                 <img src={myImg} alt="about pic" className={classes.imgAbout} />
               </Col>
             </Row>

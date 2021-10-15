@@ -17,7 +17,14 @@
 
 .imgAbout {
   border-radius: 8px;
-  margin: 7rem 4rem 4rem 4rem;
+  width: 80%;
+  height: auto;
+}
+
+.imgWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutSocialIcons {
@@ -133,7 +140,8 @@
 
   .imgAbout {
     border-radius: 8px;
-    margin: 2rem 0rem 2rem 1rem;
+
+    margin: 2rem 0rem 2rem 0rem;
   }
 }
 
