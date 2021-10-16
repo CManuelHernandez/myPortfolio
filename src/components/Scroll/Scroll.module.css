@@ -1,0 +1,16 @@
+.scrollStyle {
+  z-index: 2;
+  position: fixed;
+  border: #f24b88;
+  bottom: 2vh;
+  background-color: white;
+  color: var(--imp-text-color);
+  right: 5%;
+}
+
+.scrollStyle:hover,
+.scrollStyle:focus {
+  transition: 0.3s;
+  color: white;
+  background-color: var(--imp-text-color);
+}

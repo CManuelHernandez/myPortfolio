@@ -7,11 +7,13 @@ import { useTranslation } from "react-i18next";
 import pdf from "../../Assets/CManuelHM-CV.pdf";
 import myImg from "../../Assets/man.png";
 import classes from "./About.module.css";
+import Scroll from "../Scroll/Scroll";
 
 function About() {
   const { t } = useTranslation("global");
   return (
     <Layout>
+      <Scroll showBellow={250} />
       <Container fluid className={classes.allAbout}>
         <Container fluid className={classes.aboutSection} id="about">
           <Container className={classes.aboutContent}>

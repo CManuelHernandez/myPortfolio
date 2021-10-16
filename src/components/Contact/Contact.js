@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 
 import classes from "./Contact.module.css";
 import ContactForm from "./ContactForm";
+import Scroll from "../Scroll/Scroll";
 
 const googleMaps =
   "https://www.google.es/maps/place/Rivas-Vaciamadrid,+Madrid/@40.3493693,-3.6740024,11z/data=!4m5!3m4!1s0xd423c0de6c9b919:0x9014cc03cd201292!8m2!3d40.3519065!4d-3.5357334?hl=es";
@@ -17,6 +18,7 @@ export const Contact = () => {
   const { t } = useTranslation("global");
   return (
     <Layout>
+      <Scroll showBellow={250} />
       <Container fluid className={classes.allContact}>
         <Container fluid className={classes.contactSection} id="contact">
           <Container className={classes.contactContent}>
