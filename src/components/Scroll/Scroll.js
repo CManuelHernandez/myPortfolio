@@ -1,9 +1,27 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import { IconButton } from "@material-ui/core";
-import classes from "./Scroll.module.css";
+
+const useStyles = makeStyles(() => ({
+  toTop: {
+    zIndex: 2,
+    position: "fixed",
+    border: "#f24b88",
+    bottom: "2vh",
+    backgroundColor: "white",
+    color: "#70e7f0",
+    "&:hover, &.Mui-focusVisible": {
+      transition: "0.3s",
+      color: "white",
+      backgroundColor: "#70e7f0",
+    },
+    right: "5%",
+  },
+}));
 
 const Scroll = ({ showBellow }) => {
+  const classes = useStyles();
   const [show, setShow] = React.useState(showBellow ? false : true);
 
   const handleScroll = () => {
@@ -30,7 +48,7 @@ const Scroll = ({ showBellow }) => {
   return (
     <div>
       {show && (
-        <IconButton onClick={handleClick} className={classes.scrollStyle}>
+        <IconButton onClick={handleClick} className={classes.toTop}>
           <ExpandLessIcon />
         </IconButton>
       )}
