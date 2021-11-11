@@ -61,7 +61,11 @@ function About() {
                     className={`${classes.iconColour} ${classes.aboutSocialIcons}`}
                   >
                     <CgSoftwareDownload
-                      style={{ fontSize: "1.6em", marginRight: "0.5rem" }}
+                      style={{
+                        fontSize: "1.6em",
+                        marginRight: "0.5rem",
+                        marginBottom: "0.5rem",
+                      }}
                     />
                     {t("footer.Download My CV")}
                   </a>
@@ -75,7 +79,7 @@ function About() {
         </Container>
 
         <Container>
-          <Col md={10} className={classes.AboutDescription}>
+          <Col md={12} className={classes.AboutDescription}>
             <h1 className={classes.aboutInfoHeading}>{t("about.Education")}</h1>
             <AboutInfoItem
               title={t("about.Web Application Development")}

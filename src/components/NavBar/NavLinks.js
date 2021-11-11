@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import spainsh from "../../Assets/es.png";
 import english from "../../Assets/en.jpg";
 import classes from "./NavBar.module.css";
+import { Height } from "@material-ui/icons";
 
 const NavLinks = ({ isMobile, closeMobileMenu }) => {
   const animateFrom = { opacity: 0, y: -40 };
@@ -61,14 +62,14 @@ const NavLinks = ({ isMobile, closeMobileMenu }) => {
           onClick={() => i18n.changeLanguage("es")}
           src={spainsh}
           alt="spainsh"
-          style={{ width: 40 }}
+          style={{ width: 40, height: 25 }}
         ></img>
         <img
           className={classes.en}
           onClick={() => i18n.changeLanguage("en")}
           src={english}
           alt="english"
-          style={{ width: 50, marginLeft: 10 }}
+          style={{ width: 40, height: 25, marginLeft: 10 }}
         ></img>
         {/* <button onClick={() => i18n.changeLanguage("es")}>ES</button>
         <button onClick={() => i18n.changeLanguage("en")}>EN</button> */}

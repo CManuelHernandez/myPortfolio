@@ -29,7 +29,11 @@ function Footer() {
             className={`${classes.iconColour} ${classes.footerSocialIcons}`}
           >
             <CgSoftwareDownload
-              style={{ fontSize: "1.6em", marginRight: "0.5rem" }}
+              style={{
+                fontSize: "1.6em",
+                marginRight: "0.5rem",
+                marginBottom: "0.5rem",
+              }}
             />
             {t("footer.Download My CV")}
           </a>

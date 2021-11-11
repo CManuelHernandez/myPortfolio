@@ -22,7 +22,7 @@ export const Contact = () => {
       <Container fluid className={classes.allContact}>
         <Container fluid className={classes.contactSection} id="contact">
           <Container className={classes.contactContent}>
-            <Col md={10} className={classes.contactInfoTitle}>
+            <Col md={12} className={classes.contactInfoTitle}>
               <div>
                 <h3>{t("contact.get in touch")}</h3>
                 <h1>{t("contact.Contact")}</h1>

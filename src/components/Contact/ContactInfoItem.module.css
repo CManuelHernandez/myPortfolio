@@ -10,6 +10,8 @@
 }
 .contactInfoStyled p {
   display: flex;
+  word-break: break-word;
+  font-size: 1.6rem;
   padding: 1rem 1rem 0 1rem;
 }
 .contactInfoStyled:hover::before {
