@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import Layout from "../layout/Layout";
 import { useTranslation } from "react-i18next";
+import Scroll from "../Scroll/Scroll";
 import classes from "./Projects.module.css";
 
 import blackJ from "../../Assets/Projects/blackjack.png";
@@ -17,13 +18,15 @@ function Projects() {
   const { t } = useTranslation("global");
   return (
     <Layout>
+      <Scroll showBellow={250} />
       <Container fluid className={classes.projectSection}>
         <Particle />
         <Container className={classes.projectWrapper}>
           <Col md={12} className={classes.projectsInfoTitle}>
             <div>
               <h1 className={classes.projectHeading}>
-                My Recent &nbsp;<strong className="turquoise">Works </strong>
+                My &nbsp;
+                <strong className="turquoise">Recent Works </strong>
               </h1>
               <p className={classes.projectSubtitle} style={{ color: "white" }}>
                 Here are a few projects I've worked on.
