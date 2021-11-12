@@ -1,0 +1,117 @@
+.projectSection {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  background-image: var(--image-gradient), url(../../Assets/home-bg-nebu.jpg);
+}
+
+.projectCard {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: auto;
+}
+
+.projectCardView {
+  box-shadow: 0 0 15px #44bbc4;
+  color: white;
+  background-color: transparent;
+  opacity: 0.9;
+  transition: all 0.5s ease 0s;
+  height: 100%;
+}
+.projectCardView:hover {
+  transform: scale(1.02);
+  overflow: hidden;
+  box-shadow: 0 0 5px #29bfca;
+}
+.blogCard {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: auto;
+}
+
+.blogCardView {
+  background-color: transparent;
+  box-shadow: 0 0 15px #44bbc4;
+  color: white;
+  transition: all 0.5s ease 0s;
+  height: 100%;
+}
+
+.blogLink {
+  color: white;
+  text-decoration: none;
+}
+
+.blogLink:hover {
+  cursor: pointer;
+}
+
+.blogCardView:hover {
+  transform: scale(1.02);
+  overflow: hidden;
+  box-shadow: 0 0 5px #29bfca;
+}
+
+.cardImgTop {
+  padding: 20px;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.blogImg {
+  padding: 0px;
+  opacity: 0.8;
+  border-radius: 0px;
+}
+
+.btnPrimary,
+.btnSecondary {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+.btnPrimary {
+  color: #fff;
+  background-color: #44bbc4;
+  border-color: #44bbc4;
+}
+
+.btnSecondary {
+  color: #44bbc4;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.btnPrimary:hover {
+  color: #29bfca;
+  background-color: #fff;
+  border-color: #fff;
+}
+.btnSecondary:hover {
+  color: #fff;
+  background-color: #29bfca;
+  border-color: #29bfca;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.projectHeading {
+  color: white;
+  font-size: 2.3em;
+  font-weight: 500;
+  padding-top: 10px;
+}
+.projectSubtitle {
+  font-size: 2em;
+}
+.projectsInfoTitle h1,
+.projectsInfoTitle p {
+  display: flex;
+  justify-content: center;
+}

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import spainsh from "../../Assets/es.png";
 import english from "../../Assets/en.jpg";
 import classes from "./NavBar.module.css";
-import { Height } from "@material-ui/icons";
 
 const NavLinks = ({ isMobile, closeMobileMenu }) => {
   const animateFrom = { opacity: 0, y: -40 };
@@ -43,18 +42,19 @@ const NavLinks = ({ isMobile, closeMobileMenu }) => {
         <Link to="/contact">{t("nav.Contact")}</Link>
       </motion.li>
 
-      {/* <motion.li
+      <motion.li
         initial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.2 }}
         onClick={() => isMobile && closeMobileMenu()}
       >
-        <Link to="/">Git</Link>
-      </motion.li> */}
+        <Link to="/projects">{t("nav.Projects")}</Link>
+      </motion.li>
+
       <motion.li
         initial={animateFrom}
         animate={animateTo}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.3 }}
         onClick={() => isMobile && closeMobileMenu()}
       >
         <img

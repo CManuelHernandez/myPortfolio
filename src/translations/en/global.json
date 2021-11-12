@@ -50,7 +50,8 @@
   "nav": {
     "Home": "Home",
     "About Me": "About Me",
-    "Contact": "Contact"
+    "Contact": "Contact",
+    "Projects": "Projects"
   },
   "contact": {
     "Madrid, Rivas-Vaciamadrid - Spain": "Madrid, Rivas-Vaciamadrid - Spain",
@@ -61,5 +62,15 @@
     "Your message": "Your Message",
     "Send": "Send",
     "Sent": "Sent"
+  },
+  "projects": {
+    "My Portfolio": "My Portfolio",
+    "Name Generator": "Name Generator",
+    "Final Project of the Bootcamp of KeepCoding full web stack. Teach it up It is a platform that serves to publish online courses, for what type of users is it intended Teach it up is designed for both instructors who want to host courses as students or users who want these 2 possibilities.": "Final Project of the Bootcamp of KeepCoding full web stack. Teach it up It is a platform that serves to publish online courses, for what type of users is it intended Teach it up is designed for both instructors who want to host courses as students or users who want these 2 possibilities.",
+    "My personal Portfolio which is developed with React. In it you will find all the information about my experience and training in the IT sector, such as my repositories of my projects and social networks to make myself known. This project will grow with me as my experience grows": "My personal Portfolio which is developed with React. In it you will find all the information about my experience and training in the IT sector, such as my repositories of my projects and social networks to make myself known. This project will grow with me as my experience grows",
+    "Application to view a wide catalog of movie catalog thanks to the omdbapi Api. Made with React and stylized by Boostrap in which you can search for movies and create a list of favorites.": "Application to view a wide catalog of movie catalog thanks to the omdbapi Api. Made with React and stylized by Boostrap in which you can search for movies and create a list of favorites.",
+    "Application that allows you to play games of Bclak Jack against a bank. This application is made using JavaScript, HTML and CSS": "Application that allows you to play games of Bclak Jack against a bank. This application is made using JavaScript, HTML and CSS",
+    "Jumping Guy game is a game of jumping the enemies that appear and as they are overcome, the speed at which they appear increases. Done with C and Unity it was my first contact with the creation of games": "Jumping Guy game is a game of jumping the enemies that appear and as they are overcome, the speed at which they appear increases. Done with C and Unity it was my first contact with the creation of games",
+    "Application to generate names randomly being able to choose and the gender and origin of the names obtained. From my first contacts to using Apis with JavaScript": "Application to generate names randomly being able to choose and the gender and origin of the names obtained. From my first contacts to using Apis with JavaScript"
   }
 }
