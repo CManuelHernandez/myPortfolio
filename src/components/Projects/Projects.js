@@ -13,6 +13,7 @@ import jump from "../../Assets/Projects/jump.png";
 import teach from "../../Assets/Projects/teach.png";
 import films from "../../Assets/Projects/films.png";
 import name from "../../Assets/Projects/name.png";
+import todo from "../../Assets/Projects/todo.png";
 
 function Projects() {
   const { t } = useTranslation("global");
@@ -52,6 +53,7 @@ function Projects() {
             <Col md={4} className={classes.projectCard}>
               <ProjectCard
                 imgPath={portfolio}
+                fullStack={false}
                 title={t("projects.My Portfolio")}
                 description={t(
                   "projects.My personal Portfolio which is developed with React. In it you will find all the information about my experience and training in the IT sector, such as my repositories of my projects and social networks to make myself known. This project will grow with me as my experience grows"
@@ -64,6 +66,7 @@ function Projects() {
             <Col md={4} className={classes.projectCard}>
               <ProjectCard
                 imgPath={films}
+                fullStack={false}
                 title="MovieApp"
                 description={t(
                   "projects.Application to view a wide catalog of movie catalog thanks to the omdbapi Api. Made with React and stylized by Boostrap in which you can search for movies and create a list of favorites."
@@ -76,6 +79,7 @@ function Projects() {
             <Col md={4} className={classes.projectCard}>
               <ProjectCard
                 imgPath={blackJ}
+                fullStack={false}
                 title="Black Jack"
                 description={t(
                   "projects.Application that allows you to play games of Bclak Jack against a bank. This application is made using JavaScript, HTML and CSS"
@@ -88,6 +92,7 @@ function Projects() {
             <Col md={4} className={classes.projectCard}>
               <ProjectCard
                 imgPath={jump}
+                fullStack={false}
                 title="Jumping Guy"
                 description={t(
                   "projects.Jumping Guy game is a game of jumping the enemies that appear and as they are overcome, the speed at which they appear increases. Done with C and Unity it was my first contact with the creation of games"
@@ -99,7 +104,21 @@ function Projects() {
 
             <Col md={4} className={classes.projectCard}>
               <ProjectCard
+                imgPath={todo}
+                fullStack={false}
+                title="React Todo List"
+                description={t(
+                  "projects.Application made with React to generate a list of tasks where we can create tasks, mark completed tasks and delete tasks."
+                )}
+                link="https://cmanuelhernandez.github.io/ReactTodoList/"
+                repo="https://github.com/CManuelHernandez/ReactTodoList"
+              />
+            </Col>
+
+            <Col md={4} className={classes.projectCard}>
+              <ProjectCard
                 imgPath={name}
+                fullStack={false}
                 title={t("projects.Name Generator")}
                 description={t(
                   "projects.Application to generate names randomly being able to choose and the gender and origin of the names obtained. From my first contacts to using Apis with JavaScript"
