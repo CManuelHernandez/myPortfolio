@@ -42,7 +42,7 @@ function Projects() {
                 fullStack={true}
                 title="Teach it up!"
                 description={t(
-                  "projects.Final Project of the Bootcamp of KeepCoding full web stack. Teach it up It is a platform that serves to publish online courses, for what type of users is it intended Teach it up is designed for both instructors who want to host courses as students or users who want these 2 possibilities."
+                  "projects.Application of the final project of the Bootcamp of the Full stack web of KeepCoding. Teach it Up is a platform used to publish online courses. It is designed for users who want to publish online courses or instructors who want to receive them. This application consists of a frontend developed with React and Redux and a backend using NodeJs. It is hosted by Amazon Web Service in the domain teachitup.net"
                 )}
                 link="https://github.com/jcmpes/reactcourse"
                 linkBack="https://github.com/jcmpes/nodecourse"
@@ -82,7 +82,7 @@ function Projects() {
                 fullStack={false}
                 title="Black Jack"
                 description={t(
-                  "projects.Application that allows you to play games of Bclak Jack against a bank. This application is made using JavaScript, HTML and CSS"
+                  "projects.Application that allows you to play games of Black Jack against a bank. This application is made using JavaScript, HTML and CSS"
                 )}
                 link="https://cmanuelhernandez.github.io/BlackJack/"
                 repo="https://github.com/CManuelHernandez/BlackJack"
@@ -95,7 +95,7 @@ function Projects() {
                 fullStack={false}
                 title="Jumping Guy"
                 description={t(
-                  "projects.Jumping Guy game is a game of jumping the enemies that appear and as they are overcome, the speed at which they appear increases. Done with C and Unity it was my first contact with the creation of games"
+                  "projects.Jumping Guy game is a 2D game of jumping to the enemies that appear and as they are overcome the speed at which they appear increases. Done with C and Unity it was my first contact with the creation of games"
                 )}
                 link="https://cmanuelhernandez.github.io/JumpingGuy/"
                 repo="https://github.com/CManuelHernandez/JumpingGuy"
@@ -106,9 +106,9 @@ function Projects() {
               <ProjectCard
                 imgPath={todo}
                 fullStack={false}
-                title="React Todo List"
+                title="React To Do List"
                 description={t(
-                  "projects.Application made with React to generate a list of tasks where we can create tasks, mark completed tasks and delete tasks."
+                  "projects.Task list application made with React to generate a list where you can add, mark and delete once completed."
                 )}
                 link="https://cmanuelhernandez.github.io/ReactTodoList/"
                 repo="https://github.com/CManuelHernandez/ReactTodoList"
@@ -121,7 +121,7 @@ function Projects() {
                 fullStack={false}
                 title={t("projects.Name Generator")}
                 description={t(
-                  "projects.Application to generate names randomly being able to choose and the gender and origin of the names obtained. From my first contacts to using Apis with JavaScript"
+                  "projects.Application to generate names randomly being able to choose gender and origin of the names obtained. From my first contacts to using Apis with JavaScript"
                 )}
                 link="https://github.com/CManuelHernandez/GeneradorNombres"
                 repo="https://cmanuelhernandez.github.io/GeneradorNombres/"
