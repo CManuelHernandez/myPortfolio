@@ -26,11 +26,13 @@ function Projects() {
           <Col md={12} className={classes.projectsInfoTitle}>
             <div>
               <h1 className={classes.projectHeading}>
-                My &nbsp;
-                <strong className="turquoise">Recent Works </strong>
+                {t("projects.My")} &nbsp;
+                <strong className="turquoise">
+                  {t("projects.Recent Works")}
+                </strong>
               </h1>
               <p className={classes.projectSubtitle} style={{ color: "white" }}>
-                Here are a few projects I've worked on.
+                {t("projects.Here are a few projects I've worked on.")}
               </p>
             </div>
           </Col>
