@@ -14,6 +14,7 @@ import teach from "../../Assets/Projects/teach.png";
 import films from "../../Assets/Projects/films.png";
 import name from "../../Assets/Projects/name.png";
 import todo from "../../Assets/Projects/todo.png";
+import heroes from "../../Assets/Projects/heroes.png";
 
 function Projects() {
   const { t } = useTranslation("global");
@@ -67,9 +68,22 @@ function Projects() {
 
             <Col md={4} className={classes.projectCard}>
               <ProjectCard
+                imgPath={heroes}
+                fullStack={false}
+                title="Heroes App"
+                description={t(
+                  "projects.Application made with React and Bootstrap that also has its testing. It consists of an application to check the operation of the navigation through private and public routes in version 6 of React Router and the filtering and search of heroes"
+                )}
+                link="https://cmanuelhernandez.github.io/login"
+                repo="https://github.com/CManuelHernandez/HeroesApp"
+              />
+            </Col>
+
+            <Col md={4} className={classes.projectCard}>
+              <ProjectCard
                 imgPath={films}
                 fullStack={false}
-                title="MovieApp"
+                title="Movie App"
                 description={t(
                   "projects.Application to view a wide catalog of movie catalog thanks to the omdbapi Api. Made with React and stylized by Boostrap in which you can search for movies and create a list of favorites."
                 )}
@@ -93,19 +107,6 @@ function Projects() {
 
             <Col md={4} className={classes.projectCard}>
               <ProjectCard
-                imgPath={jump}
-                fullStack={false}
-                title="Jumping Guy"
-                description={t(
-                  "projects.Jumping Guy game is a 2D game of jumping to the enemies that appear and as they are overcome the speed at which they appear increases. Done with C and Unity it was my first contact with the creation of games"
-                )}
-                link="https://cmanuelhernandez.github.io/JumpingGuy/"
-                repo="https://github.com/CManuelHernandez/JumpingGuy"
-              />
-            </Col>
-
-            <Col md={4} className={classes.projectCard}>
-              <ProjectCard
                 imgPath={todo}
                 fullStack={false}
                 title="React To Do List"
@@ -114,6 +115,19 @@ function Projects() {
                 )}
                 link="https://cmanuelhernandez.github.io/ReactTodoList/"
                 repo="https://github.com/CManuelHernandez/ReactTodoList"
+              />
+            </Col>
+
+            <Col md={4} className={classes.projectCard}>
+              <ProjectCard
+                imgPath={jump}
+                fullStack={false}
+                title="Jumping Guy"
+                description={t(
+                  "projects.Jumping Guy game is a 2D game of jumping to the enemies that appear and as they are overcome the speed at which they appear increases. Done with C and Unity it was my first contact with the creation of games"
+                )}
+                link="https://cmanuelhernandez.github.io/JumpingGuy/"
+                repo="https://github.com/CManuelHernandez/JumpingGuy"
               />
             </Col>
 
