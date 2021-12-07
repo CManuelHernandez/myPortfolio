@@ -2,8 +2,10 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import classes from "./Projects.module.css";
+import { useTranslation } from "react-i18next";
 
 function ProjectCards(props) {
+  const { t } = useTranslation("global");
   return (
     <Card className={classes.projectCardView}>
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -17,7 +19,7 @@ function ProjectCards(props) {
           href={props.link}
           target="_blank"
         >
-          View Project
+          {t("projects.View Project")}
         </Button>
         {props.fullStack ? (
           <div>
@@ -26,14 +28,14 @@ function ProjectCards(props) {
               href={props.repo}
               target="_blank"
             >
-              View FrontEnd Repository
+              {t("projects.View FrontEnd Repository")}
             </Button>
             <Button
               className={classes.btnSecondary}
               href={props.repo}
               target="_blank"
             >
-              View BackEnd Repository
+              {t("projects.View BackEnd Repository")}
             </Button>
           </div>
         ) : (
@@ -42,16 +44,9 @@ function ProjectCards(props) {
             href={props.repo}
             target="_blank"
           >
-            View Repository
+            {t("projects.View Repository")}
           </Button>
         )}
-        {/* <Button
-          className={classes.btnSecondary}
-          href={props.repo}
-          target="_blank"
-        >
-          View Repository
-        </Button> */}
       </Card.Body>
     </Card>
   );
