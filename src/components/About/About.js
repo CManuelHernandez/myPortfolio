@@ -95,17 +95,28 @@ function About() {
             <AboutInfoItem
               className="itemBig"
               title="FrontEnd"
-              items={["HTML", "CSS", "JavaScript", "REACT"]}
+              items={[
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "REACT",
+                "TypeScript",
+                "Angular",
+              ]}
             />
             <AboutInfoItem
               title="BackEnd"
-              items={["Node", "Express", "Java"]}
+              items={["Node", "Express", "Java", "Spring"]}
             />
           </Col>
           <Col md={8} className={classes.AboutDescription}>
             <h1 className={classes.aboutInfoHeading}>
               {t("about.Experiences")}
             </h1>
+            <AboutInfoItem
+              title={[t("about.01/2022-Currently")]}
+              items={[t("about.Full stack Developer Asociated Consultant")]}
+            />
             <AboutInfoItem
               title="10/2019-04/2020"
               items={[t("about.BlazedPath Developer")]}
